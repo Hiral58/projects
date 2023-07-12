@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+body
+    {
+        margin:10;
+        padding: 10;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+.header
+      {
+          
+          width: 100%;
+         
+      }
+     
+     
+      nav
+      {
+          width: 100%;
+          height: 90px;
+          background-color:rgb(255, 255, 255);
+          line-height: 70px;
+          position: sticky;
+          top: 1px;;
+      }
+      nav ul
+      {
+          float: right;
+          margin-right: 20px;
+      }
+
+      nav ul li{
+          list-style-type: none;
+          display: inline-block;
+          transition: 0.8s all;
+      }
+      nav ul li:hover{
+       
+          background: rgb(247, 164, 132);
+      }
+
+      nav ul li a{
+          text-decoration: none;
+          color: rgb(235, 62, 62);
+          padding: 20px;
+          
+      }
+      nav a{
+        text-decoration: none;
+          color: #fff;
+          padding: 40px;
+       
+      }
+nav .logo
+{
+color:rgb(240, 94, 94);
+font-weight:700;
+font-size: 2em;
+text-decoration:none;
+}
+header .nav li{
+    list-style: nome;
+    margin-left: 30px;
+}
+
+header
+{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+padding:0px;
+display:flex;
+justify-content:space-between;
+transition:0.5s;
+}
+header.sticky
+{
+background:#fff;
+padding:0px;
+box-shadow:20px rgba(0,0,0,0.05);
+}
+header.sticky ul li a,
+header.sticky .logo
+{
+color:#111;
+}
+.title
+{
+width:100%;
+display: flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.titleText
+{
+color:#111;
+font-size: 2em;
+font-weight:300;
+text-align: left;
+}
+.titleText span
+{
+color:#ff0157;
+font-weight:700;
+font-size: 1.5em;
+text-align: center;
+}
+
+/*div.gallery {
+  margin: 4px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 380px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.special img {
+  display: block;
+ margin :100px;
+ padding: auto;
+  border-radius: 5px;
+ 
+  float: left;
+}
+div .img .p{
+    justify-content: right;
+}*/
+section.Flavours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid #ccc;
+  width: 380px;
+  text-align: center;
+}
+
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery .desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.btn
+{
+border:	#000000;
+font-size: 1em;
+color:#fff;
+background:#FF69B4;
+display:inline-block;
+padding:10px 30px;
+margin-top:20px;
+text-transform:uppercase;
+text-decoration:none;
+letter-spacing:2px;
+transition:0.5s;
+}
+.btn:hover
+{
+letter-spacing:6px;
+}
+div.special img {
+  display: block;
+ margin :100px;
+ padding: auto;
+  border-radius: 5px;
+ 
+  float: left;
+}
+div .img .p{
+    justify-content: right;
+}
+.copyrightText
+{ 
+padding:8px 40px;
+border-top:1px solid rgba(0,0,0,0.1);
+text-align:center;
+}
+.copyrightText p
+{
+color:#333;
+}
+.copyrightText a
+{
+color:#ff0157;
+font-weight:500;
+text-decoration:none;
+}
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+    line-height: 1;
+  }
+
+  nav ul {
+    float: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  nav .logo {
+    display: block;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media(max-width:991px)
+{
+header,
+header.sticky
+{
+padding:10px 20px;
+}
+header .navigation
+{
+display:none;
+}
+
+p{
+    font-size: 24px;
+}
+}
+
+</style>
+</head>
+<body>
+
+    <header>
+   
+        
+        <nav>
+            <a href="#" class="logo">Icecream<span>.</span></a>
+        <ul>
+          
+
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/aboutussss.html">About us</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/icecreamns.html#">Flavours</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/spl.html#">Special</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/contactpage.html">Contact</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/reservation.html">Reservation</a></li>
+            </ul>
+            </nav>
+            </div>
+            <script type="text/javascript">
+    window.addEventListener('scroll',function()
+    {
+    const header=document.querySelector('header');
+    header.classList.toggle("sticky",window.scrollY>0);
+    });
+    </script>
+    
+    </header>
+   <br><br><br><br><br>
+   <hr>
+    <section class="Flavours" id="Flavours">
+        <div class="title">
+       <h2 class="titleText"><span>O</span>ur Flavours</h2>
+        <p>Give yourself a sweet treat after a heavy meal , spy on our Health friendly ice creams</p>
+        </div>
+
+<hr>
+<div class="gallery">
+  <a target="_blank" href="red-velvet-ice-cream-1-1-500x500.jpg">
+    <img src="C:\Users\Priyanka\Documents\css web design\Red-Velvet-Ice-Cream-19-500x500.jpg" alt="Cinque Terre" width="70%" height="70%">
+  </a>
+  <div class="desc">red-velvet-ice-cream for ₹100 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="White-Chocolate-Strawberry-Ice-Cream-17-2-500x500.jpg">
+    <img src="C:\Users\Priyanka\Documents\css web design\Chocolate-Strawberry-Ice-Cream-Feature-500x500.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">White-Chocolate-Strawberry-Ice-Cream ₹100</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Mango-Ice-Cream-Thumbnail-500x500.jpg">
+    <img src="C:\Users\Priyanka\Documents\css web design\Mango-Ice-Cream-Thumbnail-500x500.jpg" alt="Northern Lights" width="600" height="600">
+  </a>
+  <div class="desc">Mango-Ice-Cream ₹100</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Vanilla-Ice-Cream-Temp-1-500x500.jpg">
+    <img src="C:\Users\Priyanka\Documents\css web design\Vanilla-Ice-Cream-Temp-1-500x500.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Vanilla-Ice-Cream for ₹100</div>
+</div>
+
+
+<div class="gallery">
+    <a target="_blank" href="Blueberry-cashew-ice-cream-500x500.jpg">
+      <img src="C:\Users\Priyanka\Documents\css web design\Blueberry-cashew-ice-cream-500x500.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Blueberry-cashew-ice-cream for ₹100</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="pista_icecream_recipe_2-500x500.jpg">
+      <img src="C:\Users\Priyanka\Documents\css web design\pista_icecream_recipe_2-500x500.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">pista_icecream for ₹100</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="homemade-chocolate-ice-cream-recipe-7-500x500-1.jpg">
+      <img src="C:\Users\Priyanka\Documents\css web design\homemade-chocolate-ice-cream-recipe-7-500x500-1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">chocolate-ice-cream for ₹100</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="No-Churn-Peppermint-Chocolate-Chip-Ice-Cream-1-500x500.jpg">
+      <img src="C:\Users\Priyanka\Documents\css web design\No-Churn-Peppermint-Chocolate-Chip-Ice-Cream-1-500x500.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Peppermint-Chocolate-Chip-Ice-Cream for ₹100</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="Homemade-Peach-Ice-Cream-500x500.jpg">
+      <img src="C:\Users\Priyanka\Documents\css web design\Homemade-Peach-Ice-Cream-500x500.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Peach-Ice-Cream for ₹100</div>
+  </div>
+  </section>
+  <br> <br> <br> <br> <br><b></b>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  <br>
+  <hr style="width:50%,50%;text-align:left;margin-left:0">
+  <div class="special">
+      <br>
+  <h1><img src="C:\Users\Priyanka\Documents\css web design\Unicorn-Ice-Cream-SQUARE-PNG-500x500.jpg" alt="unicorn icecream" style="width:30%;">
+    <br><br><h2 class="titleText"><span>U</span>nicorn ice cream</h2></h1>
+    <p>&ensp;Taste our one of the most famous & special one.<br>&ensp;Bring on the warm weather for those sizzling summer 
+        &ensp;<br>&ensp;days when grabbing a delicious ice cream is the most <br>&ensp;refreshing thing to do.
+        <br>&ensp;Contact us to know the price</p><br>
+       
+        
+</div><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="title">
+<a href="#" class="btn">View all</a>
+</div>
+<div class="copyrightText">
+    <p>Copyright 2021<a href="#">All rights</a>Reserevd</p>
+    </div>
+
+</body>
+</html>
+

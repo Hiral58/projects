@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p
+{
+font-weight:300;
+color:#111;
+
+}
+
+.banner
+{  
+     position: relative;
+     width: 100%;
+     min-height:100vh;
+     display: flex;
+     justify-content:center;
+     align-items:center;
+     background-image: url("C:/Users/Priyanka/Documents/css web design/blurred-background-colors-delicious-hand (1).jpg");
+     background-size: cover;
+}
+.banner .content
+{
+max-width:900px;
+text-align:center;
+}
+.banner .content h2
+{
+font-size: 5em;
+color:#fff;
+}
+.banner .content p
+{
+font-size: 1em;
+color:#fff;
+}
+.btn
+{
+border:	#000000;
+font-size: 1em;
+color:#fff;
+background:#FF69B4;
+display:inline-block;
+padding:10px 30px;
+margin-top:20px;
+text-transform:uppercase;
+text-decoration:none;
+letter-spacing:2px;
+transition:0.5s;
+}
+.btn:hover
+{
+letter-spacing:6px;
+}
+header
+{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+padding: 20px 80px;
+z-index:10000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+transition:0.5s;
+
+}
+header .sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo
+{
+color:rgb(238, 238, 238);
+font-weight:700;
+font-size: 2em;
+text-decoration:none;
+}
+header.sticky .logo
+{
+color:rgb(255, 255, 255);
+}
+header .logo span
+{
+color:#1d1518;
+}
+header .sticky
+{
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+
+header .navigation
+{
+   
+position: relative;
+display: flex;
+
+}
+header .navigation li
+{
+list-style:none;
+margin-left:40px;
+
+}
+header .navigation li a
+{
+text-decoration:none;
+color:rgb(248, 239, 239);
+font-weight:300;
+
+display:inline-block;
+
+}
+header.sticky .navigation li a
+{
+color:#111;
+}
+header .navigation li a:hover
+{
+color: rgb(255, 73, 134);
+}
+section
+{
+padding:100px;
+}
+.titleText
+{
+color:#111;
+font-size: 2em;
+font-weight:300;
+}
+.titleText span
+{
+color:#ff0157;
+font-weight:700;
+font-size: 1.5em;
+}
+@media only screen and (max-width: 700px);

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <style>
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+.header
+{
+    
+    width: 100%;
+ 
+}
+nav
+      {
+          width: 100%;
+          height: 90px;
+          background-color:rgb(255, 255, 255);
+          line-height: 70px;
+          position: sticky;
+          top: 1px;;
+      }
+      nav ul
+      {
+          float: right;
+          margin-right: 20px;
+      }
+
+      nav ul li{
+          list-style-type: none;
+          display: inline-block;
+          transition: 0.8s all;
+      }
+      nav ul li:hover{
+       
+          background: rgb(247, 164, 132);
+      }
+
+      nav ul li a{
+          text-decoration: none;
+          color: rgb(235, 62, 62);
+          padding: 20px;
+          
+      }
+      nav a{
+        text-decoration: none;
+          color: #fff;
+          padding: 40px;
+       
+      }
+nav .logo
+{
+color:rgb(240, 94, 94);
+font-weight:700;
+font-size: 2em;
+text-decoration:none;
+}
+header .nav li{
+    list-style: nome;
+    margin-left: 30px;
+}
+header
+{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+padding:0px;
+display:flex;
+justify-content:space-between;
+transition:0.5s;
+}
+header.sticky
+{
+background:#fff;
+padding:0px;
+box-shadow:20px rgba(0,0,0,0.05);
+}
+header.sticky ul li a,
+header.sticky .logo
+{
+color:#111;
+}
+
+.title
+{
+width:100%;
+display: flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.titleText
+{
+color:#111;
+font-size: 2em;
+font-weight:300;
+text-align: left;
+}
+.titleText span
+{
+color:#ff4885;
+font-weight:700;
+font-size: 1.5em;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 86px;
+  background-color: white;
+}
+
+
+/* Full-width input fields */
+input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.submitbtn {
+  background-color: #fd90ab;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+
+.submitbtn:hover {
+  opacity: 1;
+}
+
+.copyrightText
+{ 
+padding:8px 40px;
+border-top:1px solid rgba(0,0,0,0.1);
+text-align:center;
+}
+.copyrightText p
+{
+color:#333;
+}
+.copyrightText a
+{
+color:#ff0157;
+font-weight:500;
+text-decoration:none;
+}
+@media(max-width:991px)
+{
+header,
+header.sticky
+{
+padding:10px 20px;
+}
+header .navigation
+{
+display:none;
+}
+p{
+    font-size: 24px;
+}
+ </style>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+</head>
+<body> 
+    <header>
+        
+      <nav>
+        <a href="#" class="logo">Icecream<span>.</span></a>
+        <ul>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/image.html#">About us</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/icecreamns.html#">Flavours</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/special.html">Special</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/contactpage.html">Contact</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/reservation.html">Reservation</a></li>
+            </ul>
+            </nav>
+            <script type="text/javascript">
+    window.addEventListener('scroll',function()
+    {
+    const header=document.querySelector('header');
+    header.classList.toggle("sticky",window.scrollY>0);
+    });
+    </script>
+    
+    </header>
+<br>
+    <form action="file:///C:/Users/Priyanka/Documents/css%20web%20design/index.html">
+        <div class="container">
+    
+          <h2 class="titleText"><span>C</span>ontact Us</h2>
+          <hr>
+      
+          <label for="name"><b>Your Name</b></label>
+          <input type="text" placeholder="Enter Your name" name="name" id="Your name" required>
+      
+          <label for="email"><b>Email address</b></label>
+          <input type="text" placeholder="Enter Email ID" name=" Email" id=" Email" required>
+      
+          <label for="Contact Number"><b>Contact Number</b></label>
+          <input type="text" placeholder="Enter Contact Number" name="Contact Number" id="Contact Number" required>
+          <hr>
+          
+      
+          <button type="submit" class="submitbtn">Submit</button>
+    
+        </div>
+        
+        <div class="copyrightText">
+            <p>Copyright 2021<a href="#">All rights</a>Reserevd</p>
+            </div>
+        
+        
+      </form>
+    </body>
+    </html>

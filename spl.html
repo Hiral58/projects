@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body
+    {
+        margin:0;
+        padding: 0;
+    
+        
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .header
+      {
+          
+          width: 100%;
+         
+      }
+     
+     
+      nav
+      {
+          width: 100%;
+          height: 90px;
+          background-color:rgb(255, 255, 255);
+          line-height: 70px;
+          position: sticky;
+          top: 1px;;
+      }
+      nav ul
+      {
+          float: right;
+          margin-right: 20px;
+      }
+
+      nav ul li{
+          list-style-type: none;
+          display: inline-block;
+          transition: 0.8s all;
+      }
+      nav ul li:hover{
+       
+          background: rgb(247, 164, 132);
+      }
+
+      nav ul li a{
+          text-decoration: none;
+          color: rgb(235, 62, 62);
+          padding: 20px;
+          
+      }
+      nav a{
+        text-decoration: none;
+          color: #fff;
+          padding: 40px;
+       
+      }
+nav .logo
+{
+color:rgb(240, 94, 94);
+font-weight:700;
+font-size: 2em;
+text-decoration:none;
+}
+header .nav li{
+    list-style: nome;
+    margin-left: 30px;
+}
+header
+{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+padding:0px;
+display:flex;
+justify-content:space-between;
+transition:0.5s;
+}
+header.sticky
+{
+background:#fff;
+padding:0px;
+box-shadow:20px rgba(0,0,0,0.05);
+}
+header.sticky ul li a,
+header.sticky .logo
+{
+color:#111;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #eb5f5f;
+  padding: 90px;
+}
+.center .p{
+    text-align: center; 
+}
+h1{
+    
+    text-shadow: rgb(247, 164, 132);
+    
+}
+p{
+   
+    font-size: 24px;
+}
+.con-cen {
+    margin: auto;
+  width: 60%;
+  border: 3px solid #cc4239;
+  padding: 90px;
+}
+
+.container h1{
+   font-size: 14px;
+}
+
+.content {
+    justify-content: center;
+  position: relative;
+  width: 50%;
+  margin: 50px;
+ 
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  
+}
+
+.overlay{
+  opacity:0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 255, max = 255, alpha = 125, names = "blue50");
+  overflow: hidden;
+  width : 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.content:hover .overlay {
+  opacity: 0.3;
+}
+
+.content:hover .overlay  {
+  opacity: 1;
+  height: 100%;
+}
+
+.text {
+    color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+div.gallery {
+  margin: 90px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 0px;
+  text-align: center;
+}
+
+div.special img {
+  display: block;
+ margin :400px;
+ padding: auto;
+  border-radius: 5px;
+ 
+  float: left;
+}
+div .img .p{
+    justify-content: right;
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*.con {
+    margin: auto;
+  width: 100%;
+  border: 3px solid #cc4239;
+  padding: 5px;
+  justify-content: left;
+  background: rgba(255, 0, 0, 0);;
+}
+.gallery .con .p{
+    font-size: 20px;
+}*/
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid #301f1f;
+  width: 380px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery img {
+  width: 90%;
+  height: auto;
+}
+
+.gallery .text-block {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+    display: inline-block;
+    align-items: center;
+    padding-left: 120px;;
+  }
+
+  .column img {
+    float: left;
+    margin-right: 15px;
+    width: 400px;
+    height: 400px;
+  }
+  .column1 {
+    display:inline-block;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-left: 300px;;
+  }
+
+  .column1 img {
+    margin-right: 25px;
+    width: 400px;
+    height: 400px;
+    float: right;
+  }
+  .column1 div {
+    margin-right: 50px; /* Adjust the margin value as needed */
+  }
+  /*.column h2{
+    background-color: #cc4239;
+  }*/
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img {
+  float: left;
+  border-radius: 12px;
+}
+img .p{
+    font-size: 24px;
+}
+.copyrightText
+{ 
+padding:8px 40px;
+border-top:1px solid rgba(0,0,0,0.1);
+text-align:center;
+}
+.copyrightText p
+{
+color:#333;
+}
+.copyrightText a
+{
+color:#ff0157;
+font-weight:500;
+text-decoration:none;
+}
+@media(max-width:791px)
+{
+header,
+header.sticky
+{
+padding:10px 20px;
+}
+header .navigation
+{
+display:none;
+}
+p{
+    font-size: 24px;
+}
+}
+</style>
+</head>
+<body>
+    <header>
+   
+        
+        <nav>
+            <a href="#" class="logo">Icecream<span>.</span></a>
+        <ul>
+          
+
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/image.html#">About us</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/icecreamns.html#">Flavours</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/special.html">Special</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/contactpage.html">Contact</a></li>
+            <li><a href="file:///C:/Users/Priyanka/Documents/css%20web%20design/reservation.html">Reservation</a></li>
+            </ul>
+            </nav>
+            </div></header>
+            <script type="text/javascript">
+                window.addEventListener('scroll',function()
+                {
+                const header=document.querySelector('header');
+                header.classList.toggle("sticky",window.scrollY>0);
+                });
+                </script>
+                </header>
+             <hr>
+             <hr>
+            <br><br><br><br>
+<br><br><br><div class="center"><hr>
+  <h1> &ensp; &ensp; &ensp; &ensp;Its Frozen Spoons 10th year</h1>
+  <p>&ensp; &ensp; &ensp; &ensp;The best ice cream contains the best ingredients
+    The proof of great ice cream is in the taste and our ice creams are only crafted from the very best fruit, berries, nuts and chocolate – all then mixed together with a
+     huge helping of our very own creamy, organic milk. </p><hr>
+           
+</div>
+
+<br>
+
+<div class="con-cen">
+    <p>&ensp; &ensp;  &ensp;&ensp;We are celebrating it by giving amazing offers on Some<br>&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp;Unique Flavours & Amazing Milkshakes</p>
+    </div>
+  <br><br><br><br>
+<hr>
+
+<br><br>
+ 
+ 
+<div class="gallery">
+
+      <img src="C:\Users\Priyanka\Documents\css web design\17ce7b043b09d6f5aa690c63555bc74a_o2_featured_v2 (1).webp" alt="Cinque Terre" width="90%" height="90%">
+      <div class="text-block"></div>
+    </a>
+    <div class="con">
+        <p>&ensp; &ensp;  &ensp;&ensp;Get 70% off on Popsicle<br> &ensp;&ensp; &ensp;and chocolate Milkshake&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp;</p>
+        </div>
+  </div>
+  <div class="gallery">
+
+      <img src="C:\Users\Priyanka\Documents\css web design\0642c4cf61915dce049065bdf6945728.webp" alt="Forest" width="600" height="400">
+      <div class="text-block"></div>
+    </a>
+   
+</div>
+
+   
+
+<div class="column1">
+<p><img src="C:\Users\Priyanka\Documents\css web design\Peanut-Butter-and-Jelly-Ice-Cream_EXPS_FT19_247042_F_1121_1-6.jpg" alt="Pineapple" style="width:400px;height:400px;margin-right:35px;">
+   <h2>Peanut butter and jelly</h2> What could be better than peanut butter and jelly ice cream? You'll love the sweet-salty combination.<br> Use your favorite flavor of jelly and switch to crunchy peanut butter if you like extra texture. —Taste of Home <br>Test Kitchen, Milwaukee, Wisconsin
+   Go to RecipeUsing the good stuff to do good
+   From cow to cone, a lot happens at Frozen spoons<br> <br><br>to serve people great ice cream. "The good stuff" is what has and will sustain us, our communities, and our <br>customers for years to come. Sustainability is big. So, we break it down: People, Planet & Performance. Most<br> people think only about environment and community. (Even though we need performance to keep doing other good stuff.).</p>
+    <hr>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+<hr>
+    <div class="column">
+      <p><img src="C:\Users\Priyanka\Documents\css web design\Indian-Kulfi-Ice-Cream_EXPS_TOHJJ20_242404_E02_05_9b-4.jpg" alt="Forest" style="width:400px;height:400px;margin-right:25px;">
+       <h2>Kulfi</h2>
+        Single serve.
+        Double fun.
+        It’s a proven fact: treats are more fun when you get the whole thing all to yourself.<br> Okay, even if it’s not technically proven, our novelties have been helping sweet treat-lovers unwrap smiles for decades. <br>From classics like ice cream sandwiches to new indulgences, these family favorites are made with fresh, <br>local milk and cream to make them irresistible. They’re perfect for kids, perfect for grown-ups, perfect for hiding at the<br> back of the freezer so no one gets into your stash. Find your favorite and hold on tight.</p>
+    </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <div class="copyrightText">
+        <p>Copyright 2021<a href="#">All rights</a>Reserevd</p>
+        </div>
+</body>
+</html>
