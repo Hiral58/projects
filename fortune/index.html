@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><i class="fa fa-dice-d20" style="font-size: 30px; color: #211faa;"></i> Fortune<span>.</span></a>
+        <ul class="navigation">
+          <a href="https://github.blog/"><li><i class="fa fa-twitter" style="font-size:38px;"></i></li></a>
+          <a href="https://github.blog/"><li><i class="fa fa-book" style="font-size:38px;"></i></li></a>
+          <a href="https://github.blog/"><li><i class="fa fa-discord" style="font-size:38px;"></i></li></a>
+          <a href="https://github.blog/"><li><i class="fa fa-github" style="font-size:38px;"></i></li></a>
+            
+            </ul>
+    </header>
+    
+    <div class="content">
+        <h4>Introducing</h4>
+
+            <h1 style="color:blue;font-size:50px;font-weight: 600;";>Forecast Markets</h1>
+            <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Trade your beliefs on the world's first economic variable
+                <br>derivatives exchange.</h3>
+                <img src="mg3.jpg" width="550px" height="150px">
+    </div>
+     <!--<div class="bottom">-->
+    <!--<con>  
+    <div class="container">
+        <div class="text">
+          <h1 style="color:blue;">Perpetual Markets.</h1>
+          Unlimited Forecasting.
+            <p>Our Forecast Markets are perpetual. Anyone can place a trade and predict the future <br>over an unlimited time horizon of their choice. This innovation improves capital<br>efficiency and saves long-term traders fees that prediction markets inflict when<br>rolling positions.</p>
+        </div>
+        <div class="image">
+          <img src="img4.jpg" alt="image">
+        </div>
+      </div> 
+     
+    </con>-->
+    <con class="animated-container">
+      <div class="container">
+          <div class="text">
+            <h1 style="color:blue;">Perpetual Markets.</h1>
+            Unlimited Forecasting.
+              <p>Our Forecast Markets are perpetual. Anyone can place a trade and predict the future <br>over an unlimited time horizon of their choice. This innovation improves capital<br>efficiency and saves long-term traders fees that prediction markets inflict when<br>rolling positions.</p>
+          </div>
+          <div class="image">
+            <img src="img4.jpg" alt="image">
+          </div>
+      </div>
+  </con>
+  
+    <con1 class="animated-container1">
+    <div class="container2">
+      <div class="text2">
+        <h1 style="color:blue;">Aggregated Liquidity.<br>
+          Unified Predictions.</h1>
+        <p>Forecast Markets aggregate liquidity across two dimensions. Traders with entirely<br>different beliefs and prediction horizons tap into the same liquidity on Fortunity.<br>This brings over 10x revenue for LPs, generating sustainable growth for the Forecast<br>Market ecosystem.</p>
+      </div>
+      <div class="image2">
+        <img src="img5.jpg" alt="Example Image">
+      </div>
+    </div> 
+  </con1>
+  <br><br><br>
+  <div class="button-container"> 
+<div class="button"> 
+<a href="https://fortunity.gitbook.io/fortunity-docs/fortunity/about">Introduction</a>
+</div>  
+<div class="button1"> 
+  <a href="https://fortunity.gitbook.io/fortunity-docs/fortunity/about">Read the docs</a>
+  </div>    
+</div>
+<br><br><br>
+    <div class="center-content">
+        <h2>Built With</h2><br>
+        <div class="built">
+        <ul style="display:flex;">
+            <li style="list-style: none;"><img src="tit1.png" width="230px" height="80px"></li>
+            <li style="list-style: none;"><img src="tit2.png" width="200px" height="85px"></li>
+            <li style="list-style: none;"><img src="tit3.png" width="200px" height="90px"></li>
+          </ul>
+      </div>
+      
+      
+    
+     
+    <!--<div class="copyright">
+        <i class="fa fa-dice-d20" style="font-size: 150px; color: #2e65c3;"></i>
+        <p>© Copyright 2023 Fortunite – All Rights Reserved</p>
+    </div>-->
+
+    <div class="copyright">
+      <div class="copy-content">
+          <i class="fa fa-dice-d20" style="font-size: 150px; color: #211faa;"></i>
+          <p class="copy-text">© Copyright 2023 Fortunite – All Rights Reserved</p>
+      </div>
+  </div>
+  
+    
+</div>
+</div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const animatedContainers = document.querySelectorAll(".animated-container");
+    const animatedContainers1 = document.querySelectorAll(".animated-container1");
+    const content = document.querySelectorAll(".content");
+
+    function checkAnimation() {
+        animatedContainers.forEach(container => {
+            const bounding = container.getBoundingClientRect();
+            if (bounding.top < window.innerHeight * 0.5) {
+                container.classList.add("active");
+            }
+        });
+
+        animatedContainers1.forEach(container => {
+            const bounding = container.getBoundingClientRect();
+            if (bounding.top < window.innerHeight * 0.5) {
+                container.classList.add("active");
+            }
+        });
+
+        content.forEach(container => {
+            const bounding = container.getBoundingClientRect();
+            if (bounding.top < window.innerHeight * 0.5) {
+                container.classList.add("active");
+            }
+        });
+    }
+
+    checkAnimation();
+    window.addEventListener("scroll", checkAnimation);
+});
+
+  </script>
+</html>
